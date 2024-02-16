@@ -1,5 +1,5 @@
 class Category:
-    """"""
+    """Описание категории товаров"""
     name = str
     description = str
     products = list
@@ -12,8 +12,12 @@ class Category:
         self.products = products
 
 
+    def products_return(self):
+        result = ', '.join(self.products)
+        return result
+
 class Product:
-    """"""
+    """Описание конкретного товара"""
     name = str
     description = str
     pay = float
